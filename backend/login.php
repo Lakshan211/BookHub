@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 $host = 'localhost';
 $db_user = 'root';
@@ -70,4 +69,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $conn->close();
 ?>
->>>>>>> c54bceb77c341f4d6695c774cd99e743beb14e09
+

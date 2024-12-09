@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 require 'vendor/autoload.php';
 
@@ -108,4 +107,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Signup successful! You can now <a href='book.html'>login</a>";
 }
 ?>
->>>>>>> c54bceb77c341f4d6695c774cd99e743beb14e09
