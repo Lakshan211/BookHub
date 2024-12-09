@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $conn->close();
 ?>
-=======
+
 <?php
 $host = 'localhost';
 $db_user = 'root';
