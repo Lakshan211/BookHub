@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-image: url('book10.jpg');
+  background-image: url('../assets/book10.jpg');
   background-size: cover;
   background-position: center;
   color: #000; 
@@ -57,7 +57,7 @@ header nav ul li a {
 
 .hero {
   
-  background-image: url('assets/book10.jpg');
+  background-image: url('../assets/book10.jpg');
   color: #fff;
   padding: 100px 20px;
   text-align: center;
@@ -286,4 +286,68 @@ footer {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.contact-form {
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form .send-btn {
+  background-color: #2a9d8f;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-banner {
+  text-align: center;
+  width: 40%;
+}
+
+.contact-banner h2 {
+  font-size: 20px;
+  color: #2a9d8f;
+  margin-bottom: 10px;
+}
+
+.contact-banner h1 {
+  font-size: 36px;
+  color: #e76f51;
+  font-weight: bold;
 }

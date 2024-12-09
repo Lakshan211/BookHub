@@ -4,83 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('assets/book10.jpg');
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            min-height: 100vh;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        .header-content {
-            text-align: center;
-            padding: 30px 200px;
-            background-color: #ffffff;
-            color: rgb(255, 255, 255);
-        }
-
-        .header-content h2 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .container {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .card {
-            padding: 60px 40px 50px;
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        #name {
-            border: none;
-            background: transparent;
-            border-bottom: 1px solid white;
-            padding: 6px;
-            margin-bottom: 20px;
-            width: 80%;
-        }
-
-        a {
-            font-size: 13px;
-        }
-
-        img {
-            border-radius: 50%;
-            margin-bottom: -30px;
-        }
-
-        #button {
-            padding: 10px 20px;
-            background: dodgerblue;
-            color: white;
-            margin-top: 10px;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
-
-        #button:hover {
-            background-color: greenyellow;
-            color: black;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="css/signup.css"> 
 </head>
 <body>
 
@@ -95,11 +20,13 @@
         <img src="assets/book6.png" height="70" width="70" alt="Profile Image">
         <div class="card">
             <h1>Sign Up</h1>
-            <input type="text" placeholder="Username" id="name"><br>
-            <input type="password" placeholder="Password" id="name"><br>
-            <input type="password" placeholder="Re-Enter Password" id="name"><br>
-            <a href="home.html"><input type="submit" value="Create Account" id="button"></a><br><br>
-
+            <form action="backend/signup.php" method="POST">
+                <input type="text" name="name" placeholder="Username" required><br>
+                <input type="email" name="email" placeholder="Email Address" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <input type="password" name="confirm_password" placeholder="Re-Enter Password" required><br>
+                <input type="submit" value="Create Account" id="button"><br><br>
+            </form>
             Already have an Account?<br><br>
             <a href="Book.html" id="button">Log In</a>
         </div>
