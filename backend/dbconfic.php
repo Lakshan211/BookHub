@@ -2,7 +2,7 @@
 define('SERVERNAME', '127.0.0.1');
 define('USERNAME', 'root');
 define('PASSWORD', 'mariadb');
-define('DBNAME', 'vechicle');
+define('DBNAME', 'book');
 try {
 	//connect with database
 	$connect = mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DBNAME);
