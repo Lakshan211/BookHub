@@ -23,7 +23,7 @@
 	if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		$username = $_POST['name'];
 		$email = $_POST['email'];
-		$password = $_POST['password_has'];
+		$password = $_POST['password'];
 		AddData($connect,$name,$email,$password);
 	}
 	
