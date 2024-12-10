@@ -5,7 +5,7 @@
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
             
 		
-			$sql = "INSERT INTO user VALUES('$name','$hashed_password')";
+			$sql = "INSERT INTO user VALUES('$name','$email','$hashed_password')";
 			
 			$result = mysqli_query($connect,$sql);
 			if ($result) {
@@ -13,7 +13,7 @@
 			} else {
 				die("Error ".mysqli_error($connect));
 			}
-            header('Location: ../form.html');
+            header('Location: ../book.html');
             exit;
 		} catch (Exception $e) {
 			die($e->getMessage());
