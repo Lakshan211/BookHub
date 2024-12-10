@@ -1,5 +1,5 @@
 <?php
-	require_once 'dbconf.php';
+	require_once 'dbconfic.php';
 	function AddData($connect,$name,$email,$password){
 		try {
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
