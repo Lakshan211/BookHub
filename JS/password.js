@@ -17,5 +17,5 @@ function validatePasswords(event) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('signup');
-    form.addEventListener('submit', validatePasswords);
+    form.addEventListener('button', validatePasswords);
 });
