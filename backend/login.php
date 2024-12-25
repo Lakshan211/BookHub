@@ -1,4 +1,3 @@
-
 <?php
 require_once 'dbconfic.php';
 
@@ -7,7 +6,7 @@ if (isset($_POST['login'])) {
     $password = $_POST["password"];
     
     // Prepare the SQL query to fetch the username and hashed password
-    $sql = "SELECT username, password  FROM user WHERE username = '$username'";
+    $sql = "SELECT name, password  FROM user WHERE name = '$username'";
     $result = $connect->query($sql);
 
     if ($result->num_rows > 0) {
