@@ -13,7 +13,7 @@
 			} else {
 				die("Error ".mysqli_error($connect));
 			}
-            header('Location: ../book.html');
+            header('Location: ../index.html');
             exit;
 		} catch (Exception $e) {
 			die($e->getMessage());
