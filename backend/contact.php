@@ -4,7 +4,7 @@
 		try {
             
 		
-			$sql = "INSERT INTO user VALUES('$name','$email','$subject', '$message')";
+			$sql = "INSERT INTO contact VALUES('$name','$email','$subject', '$message')";
 			
 			$result = mysqli_query($connect,$sql);
 			if ($result) {
