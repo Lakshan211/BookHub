@@ -28,7 +28,7 @@
             </form>
 
             Create New Account?<br><br>
-            <a href="signup.html" id="button">Get Started</a>
+            <a href="signup.php" id="button">Get Started</a>
         </div>
     </div>
 

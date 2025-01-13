@@ -10,17 +10,17 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="features.php">Features</a></li>
                 <li><a href="community.php">Community</a></li>
                 <li><a href="sustainability.php">Sustainability</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="signup.php">Sign Up</a></li>
             </ul>
             <div class="search-container">
                 <input type="text" placeholder="Search..." aria-label="Search">
-                <a href="index.html"> <button type="submit">Search</button> </a>
+                <a href="index.php"> <button type="submit">Search</button> </a>
                 
             </div>
         </nav>
