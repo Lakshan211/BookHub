@@ -15,22 +15,22 @@
                 <li><a href="community.php">Community</a></li>
                 <li><a href="sustainability.php">Sustainability</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="login.php">Login</a></li>
+                <!-- <li><a href="login.php">Login</a></li> -->
                 <li><a href="signup.php">Sign Up</a></li>
             </ul>
             <div class="search-container">
                 <input type="text" placeholder="Search..." aria-label="Search">
-                <a href="index.php"> <button type="submit">Search</button> </a>
+                <a href="book.php"> <button type="submit">Search</button> </a>
                 
             </div>
         </nav>
     </header>
 
-    <section class="hero">
+    <!-- <section class="hero">
         <h1>Welcome to BookHub</h1>
         <p>Discover your next great read with us!</p>
         <a href="login.php" class="btn">Login</a>
-    </section>
+    </section> -->
 
     <section class="how-it-works">
         <h2>How Book Exchange Works?</h2>
@@ -61,8 +61,8 @@
             <div class="footer-section">
                 <h3>Popular Category</h3>
                 <ul>
-                    <li><a href="category.html">Art</a></li>
-                    <li><a href="category.html">Fiction</a></li>
+                    <li><a href="category.php">Art</a></li>
+                    <li><a href="category.php">Fiction</a></li>
                 </ul>
             </div>
             <div class="footer-section">
