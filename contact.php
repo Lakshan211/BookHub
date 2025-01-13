@@ -14,10 +14,10 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
+                <li><a href="features.php">Features</a></li>
                 <li><a href="community.php">Community</a></li>
-                <li><a href="sustainability.html">Sustainability</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sustainability.php">Sustainability</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
             </ul>
