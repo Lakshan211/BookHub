@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - BookHub</title>
+    <title>RegisteredHome - BookHub</title>
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="book.php">Home</a></li>
                 <li><a href="features.php">Features</a></li>
                 <li><a href="community.php">Community</a></li>
                 <li><a href="sustainability.php">Sustainability</a></li>
@@ -53,53 +53,9 @@
             </div>
         </div>
     </section>
-    <section class="latest-books">
-        <h2>Latest Books</h2>
-        <div class="book-list">
-            <div class="book" onclick="openModal('assets/book1.jpeg', 'The Grey Wolf', 'Louise Penny', '7500')">
-                <img src="assets/book1.jpeg" alt="Book Image">
-                <h4>The Grey Wolf</h4>
-                <sub>by Louise Penny</sub><br>
-                <sub>Price: RS. 7500</sub>
-            </div>
-            
-            <div class="book" onclick="openModal('assets/book2.jpeg', 'Hot Mess', 'Jeff Kinney', '4000')">
-                <img src="assets/book2.jpeg" alt="Book Image">
-                <h4>Hot Mess</h4>
-                <sub>by Jeff Kinney</sub><br>
-                <sub>Price: RS. 4000</sub>
-            </div>
-            
-            <div class="book" onclick="openModal('assets/book3.jpeg', 'Revenge of the Tipping Point', 'Malcolm Gladwell', '9000')">
-                <img src="assets/book3.jpeg" alt="Book Image">
-                <h4>Revenge of the Tipping Point</h4>
-                <sub>by Malcolm Gladwell</sub><br>
-                <sub>Price: RS. 9000</sub>
-            </div>
-            
-            <div class="book" onclick="openModal('assets/book4.jpeg', 'The Wild Robot', 'Peter Brown', '2000')">
-                <img src="assets/book4.jpeg" alt="Book Image">
-                <h4>The Wild Robot</h4>
-                <sub>by Peter Brown</sub><br>
-                <sub>Price: RS. 2000</sub>
-            </div>
-        </div>
-    </section>
     
-    <div id="bookModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img id="modalImage" src="" alt="Book Image">
-            <h4 id="modalTitle">Book Title</h4>
-            <p id="modalAuthor">by Author</p>
-            <p id="modalPrice">Price: RS. </p>
-            <button id="chatButton">Chat with Owner</button> 
-        </div>
-    </div>
     
-
-    <script src="JS/script.js"></script>
-
+   
     <footer>
         <div class="footer-content">
             <div class="footer-section">
