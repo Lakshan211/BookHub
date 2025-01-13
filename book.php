@@ -35,11 +35,11 @@
             <div class="search-container">
                 <input type="text" placeholder="Search..." aria-label="Search">
                 <a href="book.php"> <button type="submit">Search</button> </a>
-                
             </div>  
-            <div> </div>
-            <div> </div>
+            <div> 
+            
             <i class="fas fa-user icon"></i>
+            </div>
         </nav>
     </header>
 
