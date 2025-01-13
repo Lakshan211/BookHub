@@ -61,6 +61,30 @@
     <a href="#" class="btn btn-primary">Buy </a>
   </div>
 </div>
+
+<div class="card float-start" style="width: 12rem; margin: 5px;">
+  <img class="card-img-top img-thumbnail" src="assets/book2.jpeg">
+  <div class="card-body">
+    <p class="card-text">Price</p>
+    <a href="#" class="btn btn-primary">Buy </a>
+  </div>
+</div>
+
+<div class="card float-start" style="width: 12rem; margin: 5px;">
+  <img class="card-img-top img-thumbnail" src="assets/book3.jpeg">
+  <div class="card-body">
+    <p class="card-text">Price</p>
+    <a href="#" class="btn btn-primary">Buy </a>
+  </div>
+</div>
+
+<div class="card float-start" style="width: 12rem; margin: 5px;">
+  <img class="card-img-top img-thumbnail" src="assets/book4.jpeg">
+  <div class="card-body">
+    <p class="card-text">Price</p>
+    <a href="#" class="btn btn-primary">Buy </a>
+  </div>
+</div>
    
     <footer>
         <div class="footer-content">
