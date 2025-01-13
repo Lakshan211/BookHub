@@ -13,7 +13,7 @@
 			} else {
 				die("Error ".mysqli_error($connect));
 			}
-            header('Location: ../login.html');
+            header('Location: ../login.php');
             exit;
 		} catch (Exception $e) {
 			die($e->getMessage());
