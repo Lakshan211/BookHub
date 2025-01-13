@@ -19,7 +19,7 @@ if (isset($_POST['login'])) {
             
            //$_SESSION["user_name"] = $row["username"];
             
-            header("Location: ../index.html");
+            header("Location: ../book.php");
             exit; // Ensure no further code runs after redirection
         } else {
             $error = "Invalid username or password.";
@@ -29,7 +29,7 @@ if (isset($_POST['login'])) {
     }
 
     $connect->close(); // Close the database connection
-    //header("Location: ../login.html?error=" . urlencode($error));
+    //header("Location: ../login.php?error=" . urlencode($error));
    // exit;
 }
 ?>
