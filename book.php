@@ -54,7 +54,9 @@
             </div>
         </div>
     </section>
-    
+    <section class="latest-books">
+    <h2>Latest Books</h2>
+    <div class="book-list">
     <div class="card float-start" style="width: 12rem; margin: 5px;">
   <img class="card-img-top img-thumbnail" src="assets/book1.jpeg">
   <div class="card-body">
@@ -86,6 +88,10 @@
     <a href="#" class="btn btn-primary">Buy </a>
   </div>
 </div>
+    </div>
+</div>
+    </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
