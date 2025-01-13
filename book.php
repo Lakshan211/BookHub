@@ -6,18 +6,7 @@
     <title>RegisteredHome - BookHub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/home.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 40px;
-        }
-        .icon {
-            font-size: 40px;
-            color: #4CAF50;
-        }
-    </style>
+    
 </head>
 <body>
     <header>
@@ -36,10 +25,8 @@
                 <input type="text" placeholder="Search..." aria-label="Search">
                 <a href="book.php"> <button type="submit">Search</button> </a>
             </div>  
-            <div> 
+            <img src="assets/book6.png" height="50" width="50" alt="Profile Image">
             
-            <i class="fas fa-user icon"></i>
-            </div>
         </nav>
     </header>
 
