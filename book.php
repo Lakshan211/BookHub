@@ -11,10 +11,10 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
         }
         .icon {
-            font-size: 50px;
+            font-size: 40px;
             color: #4CAF50;
         }
     </style>
@@ -36,7 +36,9 @@
                 <input type="text" placeholder="Search..." aria-label="Search">
                 <a href="book.php"> <button type="submit">Search</button> </a>
                 
-            </div>
+            </div>  
+            <div> </div>
+            <div> </div>
             <i class="fas fa-user icon"></i>
         </nav>
     </header>
