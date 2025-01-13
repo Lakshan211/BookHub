@@ -26,11 +26,11 @@
         </nav>
     </header>
 
-    <!-- <section class="hero">
+    <section class="hero">
         <h1>Welcome to BookHub</h1>
         <p>Discover your next great read with us!</p>
-        <a href="login.php" class="btn">Login</a>
-    </section> -->
+        <!-- <a href="login.php" class="btn">Login</a> -->
+    </section>
 
     <section class="how-it-works">
         <h2>How Book Exchange Works?</h2>
