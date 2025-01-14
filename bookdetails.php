@@ -85,7 +85,7 @@
     function getBookDetails($connect)
     {
         $i = 0;
-        $query = "select Book_name,ISBN,Author,No_pages,Description,image_name from books";
+        $query = "select Book_name,ISBN,Author,No_pages,Description,image_name,price from books";
         $result = mysqli_query($connect,$query);
         $books = null;
         if (mysqli_num_rows($result) > 0){
@@ -108,7 +108,7 @@ if (isset($_POST['Bookname']) && $_POST['Bookname'] != '') {
     $searchQuery = mysqli_real_escape_string($connect, $searchQuery);
 
     
-    $query = "SELECT Book_name, ISBN, Author, No_pages, Description, image_name 
+    $query = "SELECT Book_name, ISBN, Author, No_pages, Description, image_name,price
               FROM books 
               WHERE Book_name LIKE '%$searchQuery%'";
     $result = mysqli_query($connect, $query);
@@ -130,6 +130,7 @@ if (isset($_POST['Bookname']) && $_POST['Bookname'] != '') {
                     <p><strong>Author:</strong> <?= htmlspecialchars($book['Author']) ?></p>
                     <p><strong>Pages:</strong> <?= htmlspecialchars($book['No_pages']) ?></p>
                     <p><strong>Description:</strong> <?= htmlspecialchars($book['Description']) ?></p>
+                    <p><strong>Price:</strong> <?= htmlspecialchars($book['price']) ?></p>
                     <?php if (!empty($book['image_name'])): ?>
                         <img src="assets/<?= htmlspecialchars($book['image_name']) ?>" alt="<?= htmlspecialchars($book['Book_name']) ?>">
                     <?php endif; ?>
