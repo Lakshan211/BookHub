@@ -9,6 +9,7 @@
     
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
@@ -22,9 +23,74 @@
             </ul>
 
             <div class="search-container">
-                <input type="text" placeholder="Search..." aria-label="Search">
-                <a href="book.php"> <button type="submit">Search</button> </a>
-            </div>  
+        <form action="book.php" method="GET">
+            <input type="text" name="Bookname" placeholder="Search..." aria-label="Search" value="<?= htmlspecialchars($searchQuery) ?>">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <?php
+    // Include the database connection and the function file
+    include 'backend/dbconnfic.php'; // Replace with your actual database connection file   
+    ?>
+     <?php
+    function getBookDetails($conn)
+    {
+        $i = 0;
+        $query = "select Book_name,ISBN,Author,No_pages,Description,image_name from books";
+        $result = mysqli_query($conn,$query);
+        $books = null;
+        if (mysqli_num_rows($result) > 0){
+            $books = mysqli_fetch_all($result,MYSQLI_ASSOC);
+        }
+    
+        return $books;
+    }
+    ?>
+
+// Initialize variables
+$books = [];
+$searchQuery = '';
+
+// Check if the search form was submitted
+if (isset($_GET['Bookname']) && $_GET['Bookname'] != '') {
+    $searchQuery = $_GET['Bookname'];
+
+    // Sanitize the input to prevent SQL injection
+    $searchQuery = mysqli_real_escape_string($conn, $searchQuery);
+
+    // Fetch books matching the search query
+    $query = "SELECT Book_name, ISBN, Author, No_pages, Description, image_name 
+              FROM books 
+              WHERE Book_name LIKE '%$searchQuery%'";
+    $result = mysqli_query($conn, $query);
+
+    if (mysqli_num_rows($result) > 0) {
+        $books = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
+} else {
+    // Fetch all books if no search query is provided
+    $books = getBookDetails($conn);
+}
+?>
+    <div class="book-list">
+        <?php if (!empty($books)): ?>
+            <?php foreach ($books as $book): ?>
+                <div class="book-item">
+                    <h2><?= htmlspecialchars($book['Book_name']) ?></h2>
+                    <p><strong>ISBN:</strong> <?= htmlspecialchars($book['ISBN']) ?></p>
+                    <p><strong>Author:</strong> <?= htmlspecialchars($book['Author']) ?></p>
+                    <p><strong>Pages:</strong> <?= htmlspecialchars($book['No_pages']) ?></p>
+                    <p><strong>Description:</strong> <?= htmlspecialchars($book['Description']) ?></p>
+                    <?php if (!empty($book['image_name'])): ?>
+                        <img src="images/<?= htmlspecialchars($book['image_name']) ?>" alt="<?= htmlspecialchars($book['Book_name']) ?>">
+                    <?php endif; ?>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <p>No books found.</p>
+        <?php endif; ?>
+    </div>
+
             <img src="assets/book6.png" height="50" width="50" alt="Profile Image">
             <img src="assets/booklogo.jpg" height="60" width="60" alt="Profile Image">
         </nav>
@@ -134,6 +200,7 @@
             <p>&copy; 2020-2024 BookHub. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
