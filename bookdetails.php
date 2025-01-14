@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - BookHub</title>
     <link rel="stylesheet" href="css/home.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9; /* Light background for contrast */
+    }
+
+    .book-list {
+        background-color: white; /* White background */
+        color: black; /* Black text */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        width: 80%;
+        max-width: 900px;
+    }
+
+    .book-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+    }
+
+    .book-item:last-child {
+        border-bottom: none;
+    }
+
+    h2 {
+        color: black; /* Ensure headings are also black */
+    }
+
+    img {
+        max-width: 100px; /* Adjust as needed */
+        margin-top: 10px;
+        display: block;
+    }
+</style>
+
 </head>
 <body>
     <header>
