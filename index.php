@@ -19,10 +19,11 @@
                 <li><a href="signup.php">Sign Up</a></li>
             </ul>
             <div class="search-container">
-                <input type="text" placeholder="Search..." aria-label="Search">
-                <a href="index.php"> <button type="submit">Search</button> </a>
-                
-            </div>
+        <form action="bookdetails.php" method="POST">
+            <input type="text" name="Bookname" placeholder="Search..." aria-label="Search" value="<?php ($searchQuery) ?>">
+            <button type="submit">Search</button>
+        </form>
+    </div>
         </nav>
     </header>
 
