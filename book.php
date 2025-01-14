@@ -26,7 +26,7 @@
                 <a href="book.php"> <button type="submit">Search</button> </a>
             </div>  
             <img src="assets/book6.png" height="50" width="50" alt="Profile Image">
-            
+            <img src="assets/booklogo.jpg" height="60" width="60" alt="Profile Image">
         </nav>
     </header>
 
