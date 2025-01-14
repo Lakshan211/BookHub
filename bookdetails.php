@@ -57,8 +57,6 @@
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="signup.php">Sign Up</a></li>
             </ul>
-            <img src="assets/book6.png" height="40" width="40" alt="Profile Image">
-            <img src="assets/booklogo.jpg" height="40" width="40" alt="Profile Image">
         </nav>
     </header>
     <?php
