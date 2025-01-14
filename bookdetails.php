@@ -44,6 +44,23 @@
         display: block;
     }
 </style>
+<style>
+    .back-link {
+        margin: 20px 0;
+        text-align: left; /* Aligns the link to the left */
+    }
+
+    .back-link a {
+        text-decoration: none;
+        color: #007BFF; /* Blue color for the link */
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .back-link a:hover {
+        text-decoration: underline; /* Adds underline on hover */
+    }
+</style>
 
 </head>
 <body>
@@ -116,6 +133,10 @@ if (isset($_POST['Bookname']) && $_POST['Bookname'] != '') {
                     <?php if (!empty($book['image_name'])): ?>
                         <img src="assets/<?= htmlspecialchars($book['image_name']) ?>" alt="<?= htmlspecialchars($book['Book_name']) ?>">
                     <?php endif; ?>
+                    <div class="back-link">
+                    <a href="index.php">← Back to Homepage</a>
+                    </div>
+
                 </div>
             <?php endforeach; ?>
         <?php else: ?>
