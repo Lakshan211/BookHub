@@ -10,12 +10,12 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f9; /* Light background for contrast */
+        background-color: #f4f4f9;
     }
 
     .book-list {
-        background-color: white; /* White background */
-        color: black; /* Black text */
+        background-color: white; 
+        color: black; 
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -35,11 +35,11 @@
     }
 
     h2 {
-        color: black; /* Ensure headings are also black */
+        color: black; 
     }
 
     img {
-        max-width: 100px; /* Adjust as needed */
+        max-width: 100px; 
         margin-top: 10px;
         display: block;
     }
@@ -50,7 +50,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="book.php">Home</a></li>
                 <li><a href="features.php">Features</a></li>
                 <li><a href="community.php">Community</a></li>
                 <li><a href="sustainability.php">Sustainability</a></li>
@@ -60,8 +60,8 @@
         </nav>
     </header>
     <?php
-    // Include the database connection and the function file
-    include 'backend/dbconfic.php'; // Replace with your actual database connection file   
+    
+    include 'backend/dbconfic.php';   
     
     ?>
      <?php
@@ -79,18 +79,18 @@
     }
     ?>
 <?php
-// Initialize variables
+
 $books = [];
 $searchQuery = '';
 
-// Check if the search form was submitted
+
 if (isset($_POST['Bookname']) && $_POST['Bookname'] != '') {
     $searchQuery = $_POST['Bookname'];
 
-    // Sanitize the input to prevent SQL injection
+   
     $searchQuery = mysqli_real_escape_string($connect, $searchQuery);
 
-    // Fetch books matching the search query
+    
     $query = "SELECT Book_name, ISBN, Author, No_pages, Description, image_name 
               FROM books 
               WHERE Book_name LIKE '%$searchQuery%'";
@@ -100,7 +100,7 @@ if (isset($_POST['Bookname']) && $_POST['Bookname'] != '') {
         $books = mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 } else {
-    // Fetch all books if no search query is provided
+    
     $books = getBookDetails($connect);
 }
 ?>
