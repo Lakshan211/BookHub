@@ -67,7 +67,7 @@
     <div class="card float-start" style="width: 12rem; margin: 5px;">
   <img class="card-img-top img-thumbnail" src="assets/book1.jpeg">
   <div class="card-body">
-    <p class="card-text">Price</p>
+    <p class="card-text"></p>
     <a href="#" class="btn btn-primary">Buy </a>
   </div>
 </div>
