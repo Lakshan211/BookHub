@@ -116,7 +116,7 @@ if (isset($_POST['Bookname']) && $_POST['Bookname'] != '') {
                     <p><strong>Pages:</strong> <?= htmlspecialchars($book['No_pages']) ?></p>
                     <p><strong>Description:</strong> <?= htmlspecialchars($book['Description']) ?></p>
                     <?php if (!empty($book['image_name'])): ?>
-                        <img src="images/<?= htmlspecialchars($book['image_name']) ?>" alt="<?= htmlspecialchars($book['Book_name']) ?>">
+                        <img src="assets/<?= htmlspecialchars($book['image_name']) ?>" alt="<?= htmlspecialchars($book['Book_name']) ?>">
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>
