@@ -10,6 +10,8 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
+create database book;
+use book;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -19,9 +21,17 @@ SET time_zone = "+00:00";
 --
 -- Database: `book`
 --
-
+CREATE TABLE IF NOT EXISTS `contact` (
+  `name` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `subject` varchar(30) NOT NULL,
+  `message` varchar(100) NOT NULL);
 -- --------------------------------------------------------
 
+CREATE TABLE IF NOT EXISTS `user` (
+  `name` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL);
 --
 -- Table structure for table `books`
 --
