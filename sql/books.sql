@@ -10,8 +10,6 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-create database book;
-use book;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -57,25 +55,5 @@ INSERT INTO `books` (`Book_ID`, `Book_name`, `ISBN`, `Author`, `No_pages`, `Desc
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
---
-CREATE TABLE IF NOT EXISTS `contact` (
-  `name` varchar(30) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `subject` varchar(30) NOT NULL,
-  `message` varchar(100) NOT NULL);
 
-  INSERT INTO `contact` (`name`, `email`, `subject`,`subject`)VALUES
-  ('mathi', 'mathivannan2001@gmail.com', 'maths', 'Hello...'),
-  ('thuva', 'thuva12@gmail.com ', 'IT', 'Hi...'),
-  ('lakshana', 'abc123@gmail.com ', 'maths', 'Welcome...');
 -- --------------------------------------------------------
-
-CREATE TABLE IF NOT EXISTS `user` (
-  `name` varchar(30) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL);
---
-INSERT INTO `user` (`name`, `email`, `password`)VALUES
-  ('laks', 'salakshan2001@gmail.com', '$2y$10$Kx95JlOkNx/mNusvKtXFLuShPXo.XC94liS8yBT6UrkqvG1noye8S'),
-  ('thuva', 'thuva12@gmail.com ', '$2y$10$Kx95JlOkNx/mNusvKtXFLuShPXo.XC94liS8yBT6UrkqvG1noye8S');
- 
