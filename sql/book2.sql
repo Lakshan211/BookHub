@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `contact` (
   `subject` varchar(30) NOT NULL,
   `message` varchar(100) NOT NULL);
 
-  INSERT INTO `contact` (`name`, `email`, `subject`,`subject`)VALUES
+  INSERT INTO `contact` (`name`, `email`, `subject`,`message`)VALUES
   ('mathi', 'mathivannan2001@gmail.com', 'maths', 'Hello...'),
   ('thuva', 'thuva12@gmail.com ', 'IT', 'Hi...'),
   ('lakshana', 'abc123@gmail.com ', 'maths', 'Welcome...');
